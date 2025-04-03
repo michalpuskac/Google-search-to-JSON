@@ -2,6 +2,9 @@
 
 A simple web application built with Flask that allows users to perform a Google search via the SerpApi service, view the organic results (title, URL, snippet) in JSON format directly on the page, and download the results as a JSON file. It also features a client-side search history.
 
+App is running on [render.com](https://render.com/) 
+# [👉APLICATION HERE👈](https://tojson-fydx.onrender.com/)
+
 ##  Features
 
 * Web interface to input search queries.
@@ -83,10 +86,10 @@ A simple web application built with Flask that allows users to perform a Google 
 ## 🗂 Project Structure
 
 ```
-    ├── .docker-compose.yml # Docker Compose configuration for defining and running multi-container Docker applications
+    ├──  docker-compose.yml # Docker Compose configuration for defining and running multi-container Docker applications
     ├──  Dockerfile         # Instructions for building the Docker image
-    ├── .poetry.lock        # Lock file for Poetry dependencies (ensures reproducible installs)
-    ├── pyproject.toml      # Poetry configuration file (dependencies and project metadata)
+    ├──  poetry.lock        # Lock file for Poetry dependencies (ensures reproducible installs)
+    ├──  pyproject.toml     # Poetry configuration file (dependencies and project metadata)
     ├── .env                # Local environment variables (API Key) !!CREATE OWN!!
     ├── .gitignore          # Specifies intentionally untracked files that Git should ignore
     ├── requirements.txt    # Python dependencies
@@ -100,6 +103,9 @@ A simple web application built with Flask that allows users to perform a Google 
     └── tests/              # Unit and integration tests
         └── test_app.py     # Tests for the Flask application
 ```
+
+## 📸 Screenshots
+![frontend-image](https://github.com/michalpuskac/Google-search-to-JSON/blob/main/frontend.jpeg)
 
 ## ⚠️ Future Improvements (TODO)
 
