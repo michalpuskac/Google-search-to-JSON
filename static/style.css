@@ -1,0 +1,192 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1rem; /* 16px */
+    color: hsl(0, 0%, 30%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#pageContainer {
+    width: 100%;
+    max-width: 36.25rem;
+    margin-top: 10vh;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+}
+
+#inputContainer {
+    width: 100%;
+}
+
+input[type=text] {
+    display: block;
+    height: 2.75rem;
+    width: 100%;
+    border: 0.0625rem solid hsl(0, 0%, 85%);
+    background: transparent;
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem hsl(0, 0%, 85%);
+    border-radius: 1.5rem;
+    margin: 1.875rem 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type=text]:hover {
+    box-shadow: 0.1875rem 0.125rem 0.4375rem hsl(0, 0%, 80%);
+}
+
+/* Buttons */
+#btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: hsl(0, 0%, 97%);
+    border: 0.0625rem solid hsl(0, 0%, 85%);
+    box-shadow: 0.0625rem 0.0625rem 0.25rem hsl(0, 0%, 70%);
+    border-radius: 0.375rem;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    padding: 0.5rem 1.5rem;
+    min-width: 3.375rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: hsla(0, 62%, 78%, 0.05);
+    box-shadow: 0.075rem 0.075rem 0.3125rem hsl(0, 0%, 85%);
+    transition: 0.3s;
+}
+
+.button:active {
+    scale: 0.96;
+    background-color: hsl(0, 0%, 97%);
+    box-shadow: 0.0625rem 0.0625rem 0.25rem hsl(0, 0%, 70%);
+}
+
+/* Ddownload button/link for json */
+#downloadBtn{
+    border: none;
+    border-radius: 1.875rem;
+    box-shadow:hsl(0, 0%, 100%);
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+}
+
+/* clearing history btn */
+#clearHistoryBtn{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 62%, 78%) ;
+    border: none;
+    box-shadow: none;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    margin-bottom: 1.875rem;
+}
+#clearHistoryBtn:hover {
+    scale: 1.1;
+}
+#clearHistoryBtn:active {
+    scale: 1;
+}
+/* Result box with json file */
+#results:empty {
+    display: none;
+}
+
+#results:not(:empty) {
+    display: block;
+    background-color: hsl(0, 0%, 97%);
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem hsl(0, 0%, 85%);
+    border: hsl(0, 0%, 85%);
+    border-radius: 12px;
+    padding: 20px 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin: 1.25rem 0rem 1.25rem 0rem;
+    transition: border 0.3s ease;
+}
+#results:not(:empty):hover {
+    box-shadow: 0.075rem 0.075rem 0.4375rem hsl(0, 0%, 80%);
+    transition: 0.2s;
+}
+
+/* Loading spinner  */
+.spinner {
+    border: 0.25rem solid hsl(0, 0%, 85%);
+    border-top: 0.25rem solid hsl(0, 3%, 31%);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* history container */
+.hidden{
+    display: none;
+}
+
+#historyContainer {
+    border:none;
+}
+
+.historyEntry {
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+.historyEntry:hover {
+    background-color: hsla(0, 62%, 78%, 0.1);
+    border-radius: 1.25rem;
+}
+
+hr{
+    margin:1.25rem 0rem;
+}
+
+/* smaller screens */
+@media (max-width: 600px) {
+    #pageContainer {
+        margin-top: 1vh;
+        padding: 4vh ;
+    }
+}

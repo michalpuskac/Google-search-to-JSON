@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google_search_something</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div id="pageContainer">
+        <h1>Google search to JSON</h1>
+        
+        <form id="searchForm" action="/search" method="post">
+            <div id="inputContainer">
+                <input type="text" name="query" placeholder="Enter keyword" required>
+            </div>
+            <div id="btnContainer">
+                <button class="button" id="searchBtn" type="submit">Search</button>
+            </div>
+        </form>
+
+        <!-- Results -->
+        <div id="results"></div>
+        <!-- 'Button' for download reusults -->
+        <a class="button" id="downloadBtn" style="display:none; margin-top: 10px;" href="#">Download JSON</a>
+        <!-- History -->
+        <div id="historyContainer" class="hidden">
+            <hr>
+            <h3>Search History</h3>
+            <div id="historyEntries"></div>
+            <button id="clearHistoryBtn" class="button">Clear History</button>
+        </div>
+        <!-- Loading message / spinner container -->
+        <div id="loadingMessage" class="hidden">
+            <div class="spinner"></div> Loading...
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>

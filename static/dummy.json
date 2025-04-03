@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Test title 1",
+        "url": "http://example.com/1",
+        "snippet": "Test snippet 1."
+    },
+    {
+        "title": "Test title 2",
+        "url": "http://example.com/2",
+        "snippet": "Test snippet 2."
+    }
+]
