@@ -71,6 +71,14 @@ App is running on [render.com](https://render.com/)
     ```
 3.  Open your web browser and navigate to: `http://localhost:5000`
 
+## Running the Application -> Docker
+1. Download and install [Docker](https://render.com/) if you don't have one
+2. Run in terminal
+   ```bash
+    docker-compose up -d --build
+   ```
+3. Open your web browser and navigate to: `http://localhost:8000/`
+
 ## 🧪 Running Tests
 
 1.  Make sure your virtual environment is activated and development dependencies (`pytest`) are installed.
