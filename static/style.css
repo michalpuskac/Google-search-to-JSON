@@ -58,6 +58,7 @@ input[type=text]:hover {
 
 .button {
     background-color: hsl(0, 0%, 97%);
+    color: hsl(0, 0%, 30%);
     border: 0.0625rem solid hsl(0, 0%, 85%);
     box-shadow: 0.0625rem 0.0625rem 0.25rem hsl(0, 0%, 70%);
     border-radius: 0.375rem;
@@ -118,6 +119,7 @@ a:link {
 }
 
 #results:not(:empty) {
+    word-break: break-word;
     display: block;
     background-color: hsl(0, 0%, 97%);
     box-shadow: 0.0625rem 0.0625rem 0.3125rem hsl(0, 0%, 85%);
