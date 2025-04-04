@@ -3,7 +3,7 @@
 A simple web application built with Flask that allows users to perform a Google search via the SerpApi service, view the organic results (title, URL, snippet) in JSON format directly on the page, and download the results as a JSON file. It also features a client-side search history.
 
 App is running on [render.com](https://render.com/) 
-# [👉APLICATION HERE👈](https://tojson-fydx.onrender.com/)
+# [👉APP👈](https://tojson-fydx.onrender.com/)
 
 ##  Features
 
