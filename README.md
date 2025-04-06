@@ -94,12 +94,13 @@ App is running on [render.com](https://render.com/)
 ## 🗂 Project Structure
 
 ```
+    project-root/
+	│
     ├──  docker-compose.yml # Docker Compose configuration for defining and running multi-container Docker applications
     ├──  Dockerfile         # Instructions for building the Docker image
     ├──  poetry.lock        # Lock file for Poetry dependencies (ensures reproducible installs)
     ├──  pyproject.toml     # Poetry configuration file (dependencies and project metadata)
     ├── .env                # Local environment variables (API Key) !!CREATE OWN!!
-    ├── .gitignore          # Specifies intentionally untracked files that Git should ignore
     ├── requirements.txt    # Python dependencies
     ├── src/                # Source code directory
     │   └── app.py          # Main Flask application logic

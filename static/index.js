@@ -8,7 +8,7 @@ const loadingMessage = document.getElementById("loadingMessage");
 const clearHistoryBtn = document.getElementById("clearHistoryBtn");
 const useMockData = false; // Switch for testing !
 
-
+// Modify the data and save it
 function addToHistory(query, results) {
     let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
     history.push({ query, results, timestamp: new Date().toISOString() });
@@ -16,7 +16,7 @@ function addToHistory(query, results) {
     displayHistory();
 }
 
-
+// read the current stat of data and render it
 function displayHistory() {
     let history = JSON.parse(localStorage.getItem("searchHistory")) || [];
     if (!history.length) {
@@ -102,4 +102,4 @@ form.addEventListener('submit', async (e) => {
             searchBtn.disabled = false;
         },500);
     }
-    });
+    });  
